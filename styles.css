@@ -31,3 +31,10 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.hobbesDancer{
+height: 100px;
+width: 100px;
+position: absolute;
+
+}
