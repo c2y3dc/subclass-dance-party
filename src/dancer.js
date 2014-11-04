@@ -41,8 +41,8 @@ var Dancer = function(top, left , timeBetweenSteps){
   this.step();
 };
 
-// Dancer.prototype = Object.create(Dancer.prototype);
-// Dancer.prototype.constructor = Dancer;
+Dancer.prototype = Object.create(Dancer.prototype);
+Dancer.prototype.constructor = Dancer;
 Dancer.prototype.step = function(){
   var boundStep = this.step.bind(this);
   console.log(this);

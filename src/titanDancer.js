@@ -11,5 +11,5 @@ TitanDancer.prototype = Object.create(Dancer.prototype);
 TitanDancer.prototype.constructor = TitanDancer;
 TitanDancer.prototype.step = function(){
   Dancer.prototype.step.call(this);
-  this.$node.css("transform", "rotate(90deg)");
+  this.$node.animate({ "left": "+=50px" }, "slow" )
 };
