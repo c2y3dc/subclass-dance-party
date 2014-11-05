@@ -58,5 +58,9 @@ Dancer.prototype.setPosition = function(top, left){
 };
 Dancer.prototype.lineUp = function(){
   this.$node.css("left", "0px");
-}
+};
+
+Dancer.prototype.runAway = function(){
+
+};
 
