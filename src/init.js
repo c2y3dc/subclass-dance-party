@@ -6,6 +6,7 @@ $(document).ready(function(){
   $(".lineUpButton").on("click", function(event){
     for(var i =0; i<window.dancers.length; i++){
       window.dancers[i].lineUp();
+      // console.log(this);
     }
   });
 
@@ -39,6 +40,13 @@ $(document).ready(function(){
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
    // console.log($('body').append(dancer.$node));
+   //
+   $(".TitanDancer").on("mouseover", function(event){
+    var randomx = (Math.random() * 100)-(Math.random()*100);
+    var randomy = (Math.random() * 100)-(Math.random()*100);
+    console.log(this);
+    $(this).animate({ "left": "+=" +randomx+"", "top": "+=" +randomy+""}, "fast" );
+   });
   });
 });
 

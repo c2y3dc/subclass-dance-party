@@ -45,8 +45,6 @@ Dancer.prototype = Object.create(Dancer.prototype);
 Dancer.prototype.constructor = Dancer;
 Dancer.prototype.step = function(){
   var boundStep = this.step.bind(this);
-  console.log(this);
-  console.log(boundStep);
   setTimeout(boundStep, this.timeBetweenSteps);
 };
 Dancer.prototype.setPosition = function(top, left){
