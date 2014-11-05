@@ -9,4 +9,5 @@ HobbesDancer.prototype = Object.create(Dancer.prototype);
 HobbesDancer.prototype.constructor = HobbesDancer;
 HobbesDancer.prototype.step = function(){
   Dancer.prototype.step.call(this);
+  this.$node.animate({"transform": "+=15"}, "slow");
 };
