@@ -11,3 +11,6 @@ HobbesDancer.prototype.step = function(){
   Dancer.prototype.step.call(this);
   this.$node.animate({"transform": "+=15"}, "slow");
 };
+// HobbesDancer.prototype.lineUp = function(){
+//   //
+// }

@@ -3,6 +3,12 @@ $(document).ready(function(){
   window.dancers = [];
   console.log(window.dancers);
 
+  $(".lineUpButton").on("click", function(event){
+    for(var i =0; i<window.dancers.length; i++){
+      window.dancers[i].lineUp();
+    }
+  });
+
 
   $(".addDancerButton").on("click", function(event){
     /* This function sets up the click handlers for the create-dancer
